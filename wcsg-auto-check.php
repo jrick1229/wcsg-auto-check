@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce Subscriptions Gifting - Auto-Check
  * Plugin URI: https://github.com/jrick1229/wcsg-auto-check
- * Description: Adds a confirmation dialog when deleting a payment method.
+ * Description: Auto-check the gifting checkbox on the product page.
  * Author: Prospress Inc.
  * Author URI: http://prospress.com/
  * Version: 1.0
@@ -32,6 +32,8 @@
  */
 
 function wcsg_auto_check() {
-    wp_enqueue_script( 'wcsg-auto-check-script', plugin_dir_url( __FILE__ ) . 'wcsg-auto-check.js', array( 'jquery' ), '1.0.0', true  );
+    if (is_product()) {
+        wp_enqueue_script( 'wcsg-auto-check-script', plugin_dir_url( __FILE__ ) . 'wcsg-auto-check.js', array( 'jquery' ), '1.0.0', true  );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'wcsg_auto_check' );
