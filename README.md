@@ -1,6 +1,6 @@
 # WooCommerce Subscriptions Gifting - Auto-Check
 
- For use with [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions-gifting/).
+ For use with [WooCommerce Subscriptions Gifting](https://woocommerce.com/products/woocommerce-subscriptions-gifting/).
 
 Install and activate this plugin. It will auto-check the gifting checkbox on product pages.
 
