@@ -1,0 +1,7 @@
+*** WooCommerce Subscriptions Gifting - Auto-Check Changelog ***
+
+2018.11.20 - version 2.0
+* New: Add ability to only apply to specified product ID.
+
+2018.10.21 - version 1.0
+* First Release

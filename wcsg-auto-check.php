@@ -5,7 +5,7 @@
  * Description: Auto-check the gifting checkbox on the product page.
  * Author: Prospress Inc.
  * Author URI: http://prospress.com/
- * Version: 1.0
+ * Version: 2.0
  * License: GPLv3
  *
  * GitHub Plugin URI: Prospress/wcsg-auto-check
@@ -32,7 +32,8 @@
  */
 
 function wcsg_auto_check() {
-    if (is_product()) {
+    $page_id = get_the_ID();
+    if ( $page_id == 14 ) {
         wp_enqueue_script( 'wcsg-auto-check-script', plugin_dir_url( __FILE__ ) . 'wcsg-auto-check.js', array( 'jquery' ), '1.0.0', true  );
     }
 }
