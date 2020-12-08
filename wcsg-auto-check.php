@@ -32,8 +32,10 @@
  */
 
 function wcsg_auto_check() {
-    $page_id = get_the_ID();
-    if ( $page_id == 14 ) {
+    $current_page = get_the_ID();
+    $pages_to_check = ( defined( 'WCSG_PAGES_TO_CHECK' ) ? WCSG_PAGES_TO_CHECK : true );
+
+    if ( $pages_to_check === true || in_array( $current_page, $pages_to_check ) ) {
         wp_enqueue_script( 'wcsg-auto-check-script', plugin_dir_url( __FILE__ ) . 'wcsg-auto-check.js', array( 'jquery' ), '1.0.0', true  );
     }
 }

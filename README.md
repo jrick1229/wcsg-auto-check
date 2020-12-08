@@ -18,6 +18,14 @@ To install:
 1. Click **Install Now**
 1. Click **Activate**
 
+## Instructions 
+
+By default, once you activate this plugin, it will automatically check the Gifting checkbox on **all pages**. If you want to check it only on some **spefific pages**, you'll need to add this constant on wp-config.php file:
+
+`define( 'WCSG_PAGES_TO_CHECK', array( 1, 2, 3 ) );`
+
+Each of these numbers (1,2,3) is the ID of a page where this checkbox will be checked.
+
 ## Reporting Issues
 
 If you find a problem or would like to request this plugin be extended, please [open a new Issue](https://github.com/jrick1229/wcsg-auto-check/issues/new).
